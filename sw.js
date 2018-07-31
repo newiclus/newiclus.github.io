@@ -165,7 +165,7 @@ workbox.routing.registerRoute(
   })
 );
 
-workbox.routing(
+workbox.routing.registerRoute(
   /(\/post\/)post_([0-9])/,
   workbox.strategies.staleWhileRevalidate({
     cacheName: 'post-cache',
