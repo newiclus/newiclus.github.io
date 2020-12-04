@@ -1,5 +1,5 @@
 # newiclus.github.io
 
-App de ejemplo sobre la charla de PWA en Lima.JS
+Resume JMS Project
 
 [Link](https://newiclus.github.io)
