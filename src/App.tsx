@@ -1,10 +1,19 @@
+import './App.scss'
 import React from 'react';
-import './App.css'
+import { Avatar, Title } from './Components'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">React</header>
+      <aside className="App__sidebar"></aside>
+      <div className="App__content">
+        <header className="App__header">
+          <Avatar />
+          <Title />
+        </header>
+        <section className="App__body"></section>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,45 @@
+
+@import './Config/variables';
+@import  './Components/Common/Picture/Picture.scss';
+@import  './Components/Common/Tag/Tag.scss';
+@import  './Components/Title/Title.scss';
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: $body-bg-color;
+  font-size: $font-size-global;
+  color: $text-color;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 46px auto;
+  grid-template-rows: auto;
+  grid-template-areas: "sidebar content";
+
+  &__sidebar {
+    grid-area: sidebar;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(137, 154, 176, 0.5), rgba(204, 77, 159, 0.5)), 
+                      linear-gradient(to bottom, #7f87ab, #7f87ab);
+  }
+
+  &__content {
+    background-color: $content-bg-color;
+    grid-area: content;
+    height: 100vh;
+    position: relative;
+  }
+
+  &__header {
+    padding-left: 14px;
+
+    .avatar {
+      display: none;
+    }
+  }
+}
+

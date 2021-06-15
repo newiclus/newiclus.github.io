@@ -1,0 +1,27 @@
+@import '../../../Config/variables';
+
+.tag {
+  color: $tag-text-color;
+  background-color: $default-bg-color;
+  display: inline-block;
+  padding: 4px 8px;
+
+  &__color--blue {
+    background-color: $blue-bg-color;
+  }
+
+  &__color--purple {
+    background-color: $purple-bg-color;
+  }
+
+  &__color--red {
+    background-color: $red-bg-color;
+  }
+
+  &__size--small {
+    font-size: 0.8em;
+  }
+  &__size--medium {
+    font-size: 1.2em;
+  }
+}
