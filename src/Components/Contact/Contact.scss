@@ -1,0 +1,43 @@
+@import '../../Config/variables';
+
+.contact {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+
+    a {
+      color: $text-color;
+      font-size: 0.95em;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: $purple-bg-color;
+      }
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-right: 6px;
+    width: 22px;
+    height: 20px;
+    vertical-align: top;
+
+    &.icon--github {
+      background: url('../../images/github_icon.svg') no-repeat 0 0;
+    }
+
+    &.icon--linkedin {
+      background: url('../../images/linkedin_icon.svg') no-repeat 1px 0;
+    }
+
+    &.icon--email {
+      background: url('../../images/mail_icon.svg') no-repeat 1px 0;
+    }
+  }
+}

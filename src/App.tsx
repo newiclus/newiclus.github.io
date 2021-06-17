@@ -1,6 +1,11 @@
-import './App.scss'
+import './index.scss'
 import React from 'react';
-import { Avatar, Title } from './Components'
+import {
+  Avatar, 
+  Contact,
+  Summary, 
+  Title
+} from './Components'
 
 
 function App() {
@@ -11,8 +16,11 @@ function App() {
         <header className="App__header">
           <Avatar />
           <Title />
+          <Contact />
         </header>
-        <section className="App__body"></section>
+        <section className="App__body">
+          <Summary />
+        </section>
       </div>
     </div>
   )
