@@ -24,10 +24,12 @@ body {
   }
 
   &__content {
-    background-color: $content-bg-color;
+    background: url('./images/bg_content.png') repeat 0 0 $content-bg-color;
     grid-area: content;
     height: 100vh;
     position: relative;
+    border-left: 1px solid #fff;
+    box-shadow: 0 0 6px rgba(100, 100, 100, 0.6);
   }
 
   &__header {
@@ -37,5 +39,10 @@ body {
       display: none;
     }
   }
+
+  &__body {
+    padding-left: 14px;
+    padding-right: 18px;
+  } 
 }
 

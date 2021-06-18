@@ -1,0 +1,29 @@
+@import '../../Config/variables';
+
+.summary {
+  position: relative;
+
+  &__content {
+    font-family: $text-font;
+
+    p {
+      font-size: 0.9em;
+      letter-spacing: 0.27px;
+      line-height: 1.35;
+    }
+  }
+
+  &__viewmore {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, #f7f7f7 0%, rgba(247,247,247,0.7) 80%);
+    border: 0 none;
+    display: block;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+  }
+}
