@@ -5,6 +5,8 @@
 
   &__content {
     font-family: $text-font;
+    height: 150px;
+    overflow: hidden;
 
     p {
       font-size: 0.9em;
@@ -17,7 +19,8 @@
     background: rgb(255,255,255);
     background: linear-gradient(0deg, #f7f7f7 0%, rgba(247,247,247,0.7) 80%);
     border: 0 none;
-    display: block;
+    color: $title-color;
+    cursor: pointer;
     height: 60px;
     margin: 0;
     padding: 0;
